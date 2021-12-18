@@ -56,7 +56,11 @@ class Employee {
 	
 	@Override
 	public int hashCode() {
-	return Objects.hash(this.id, this.name, this.role);
+		return Objects.hash(this.id, this.name, this.role);	
+	}
 	
+	@Override
+	public String toString() {
+		return "Employee{" + this.id + ",name=' " + this.name + '\'' + ", role=' " + this.role + '\'' + '}';
 	}
 }
